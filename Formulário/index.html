@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Elementos de um formulário</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name='description' content="Este é um guia para formulários">
+        <link href="estilo.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Formulários</h1>
+        <form>
+            <fieldset>
+                <legend>Campos do tipo input</legend>
+                <label for='nome'>Nome:</label>
+                <input id='nome' type='text' name='nome' placeholder="Informe seu nome">
+                <label for='senha'>Senha:</label>
+                <input id='senha' type='password' name='senha' required>
+                <label for='nasc'>Data de nascimento:</label>
+                <input id='nasc' type='date' name='nasc'>
+            </fieldset>
+            <fieldset>
+                <legend>Campo do tipo select</legend>
+                <label for='curso'>Curso:</label>
+                <select name='curso' id='curso'>
+                    <option value='1'>Técnico em Informática</option>
+                    <option value='2'>Técnico em Química</option>
+                    <option value='3'>Técnico em Meio Ambiente</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Campo do tipo radio</legend>
+                <label>Concorda com os termos?</label>
+                <input id='sim' type='radio' name='termos' value='Sim'><label for='sim'>Sim</label>
+                <input type='radio' name='termos' value='Nãp'> Não
+            </fieldset>
+            <fieldset>
+                <legend>Campo do tipo checkbox</legend>
+                <label>O que você prefere?</label>
+                <input type='checkbox' name='html' value='1'> HTML
+                <input type='checkbox' name='css' value='1'> CSS
+            </fieldset>
+            <button name='enviar'>Enviar</button>
+        </form>
+    </body>
+</html>
