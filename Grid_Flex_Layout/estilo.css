@@ -15,8 +15,8 @@ body, html{
 
 .layout-login{
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 200px 1fr 200px;
     height: 100vh;
     width: 100vw;
     grid-template-areas:
@@ -25,27 +25,27 @@ body, html{
     ". . . "
 }
 
-input-group{
-    display: flex;
-    align-items: center;
-}
-
 form{
     grid-area: login;
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: space-around;
 }
 
-label {
-    order: 1;
-    width: 10em;
+.input-group{
+    display: flex;
+    justify-content: space-around;
 }
-  
-input{
-    order: 2;
-    flex: 1 1 auto;
+
+.input-group > label{
+    flex: 1;
+    padding: 5px;
+}
+
+.input-group > input{
+    flex: 3;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 
