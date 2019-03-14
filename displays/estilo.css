@@ -1,0 +1,35 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.container > div{
+    flex: 1;
+    margin: 5px;
+    height: auto;
+    border: 1px solid black;
+}
+
+.container > div:hover{
+    background-color: blueviolet;
+}
