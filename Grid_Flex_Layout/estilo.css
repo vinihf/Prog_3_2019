@@ -21,12 +21,12 @@ body, html{
     width: 100vw;
     grid-template-areas:
     ". . . "
-    ". login ."
+    ". abacaxi ."
     ". . . "
 }
 
 form{
-    grid-area: login;
+    grid-area: abacaxi;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -43,8 +43,8 @@ form{
 }
 
 .input-group > input{
-    flex: 3;
-    border-radius: 4px;
+    flex: 6;
+    border-radius: 5px;
     padding: 5px;
 }
 
@@ -56,8 +56,8 @@ header{
 nav{    
     background-color: #CEB7B3;
     display: flex;
-    justify-content: center;
-    align-items: center
+    justify-content: space-around;
+    align-items: center;
 }
 
 section{
