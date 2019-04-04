@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
+</head>
+<body>
+    <div id='container'>
+        <form onsubmit="return false;">
+            <input name='valor1' class='valor1' type='number' placeholder="Informe o valor 1">
+            <input name='valor2' class='valor2' type='number' placeholder="Informe o valor 2">
+            <div id='botoes'>
+                <button class='btSo'>Soma</button>
+                <button class='btSu'>Subtrai</button>
+                <button class='btDi'>Divide</button>
+                <button class='btMu'>Multiplica</button>
+            </div>
+            <div id='resultado'>
+                O resultado é: 
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

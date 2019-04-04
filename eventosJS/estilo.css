@@ -1,0 +1,46 @@
+body,html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    height:100vh;
+    width: 100vw;
+}
+
+#container{
+    min-height: 100vh;
+    background-color: royalblue;
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: ". formulario .";
+}
+
+form{
+    margin: 10px;
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+form > input{
+    border-radius: 5px;
+    font-size: 1.3em;
+}
+
+#botoes{
+    display: flex;
+}
+
+#botoes > button{
+    flex: 1;
+    border-radius: 5px;
+    font-size: 1.3em;
+    margin:5px;
+}
+
+#resultado{
+    text-align: center;
+    font-size: 1.3em;
+    background-color: azure;
+    height: 30px;
+}
