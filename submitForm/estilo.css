@@ -1,0 +1,53 @@
+html,body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#container{
+    background-color: lavender;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: ". formulario .";
+}
+
+form{
+    margin: 10px;
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.botoes{
+    display: flex;
+}
+
+.botoes > button{
+    flex: 1;
+    border-radius: 5px;
+    font-size: 1.3em;
+    margin:5px;
+}
+
+form > input{
+    border-radius: 5px;
+    font-size: 1.3em;
+    border-color: blueviolet;
+}
+
+.erro{
+    text-align: center;
+    font-size: 1.3em;
+    background-color: white;
+    border-color: red;
+    color: red;
+}
+
+
+
+
+
+
+
