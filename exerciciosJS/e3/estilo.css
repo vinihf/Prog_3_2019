@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+html,body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#container{
+    background-color:#cc4165;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensagem{
+    font-size: 5em;
+    color: #ffe26f;
+}
+
+.horario{
+    font-size: 3em;
+    color: #ffe26f;
+}

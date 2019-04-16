@@ -1,0 +1,52 @@
+html,body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#container{
+    background-color:#00d1cd;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 1f 2fr 1fr;
+    grid-template-areas: ". formulario .";
+}
+
+form{
+    margin: 10px;
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.divide{
+    border-radius: 5px;
+    font-size: 2em;
+    margin:5px;
+}
+
+form > input{
+    border-radius: 5px;
+    font-size: 2em;
+    padding:5px;
+}
+
+form > input::placeholder{
+    color: #444444;
+}
+
+form > input:focus{
+    background-color: #f30067;
+    color: white;
+}
+
+.resultado{
+    font-size:3em;
+    background-color: #444444;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
