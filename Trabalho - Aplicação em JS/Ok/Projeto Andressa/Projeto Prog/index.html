@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Indicador de Músicas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="estilo.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="container">
+            <form class = "form">
+                <div class = "titulo">
+                    <h1>Indicador de Músicas</h1>
+                    <h4> Neste site, você encontrará sujestões de até 3 músicas que talvez 
+                        não conheça, de acordo com o gênero musical escolhido. <br>
+                        Indique quantas músicas gostaria de conhecer (até 3 músicas por vez) e selecione 
+                        o seu gênero musical favorito. Clique no botão "Sugerir" e as músicas serâo exibidas na tela. 
+                    </h4>
+                </div class = "input">
+                    <input name='numero' max=3 class='numero' type='number' placeholder="Quantas Músicas Deseja?">
+                <div class = "select">
+                    <select name='genero' class='genero' >
+                        <option value='0'>Selecione um Gênero Musical</option>    
+                        <option value='Pop'>Pop</option>
+                        <option value='Rock'>Rock</option>
+                        <option value='Reggae'>Reggae</option>
+                        <option value='Funk'>Funk</option>
+                        <option value="Indie">Indie</option>
+                    </select>
+                </div>
+                <div class='botao'>
+                    <button class='btnResultado'>Sugerir</button>
+                </div>
+                <div class='resultado'>
+                    Músicas Sugeridas Para Você: 
+                </div>
+                <div class = "tema">
+                    <div class = 'temalight'>
+                        <input type='radio' class='light' name='tema' value='light' checked> Light
+                    </div>
+                    <div class = 'temadark'>
+                        <input type='radio' class='dark' name='tema' value='dark' > Dark
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer>
+            <h3>Desenvolvido por Andressa</h3>
+        </footer>
+        <script src = "main.js"></script>
+    </body>
+</html>

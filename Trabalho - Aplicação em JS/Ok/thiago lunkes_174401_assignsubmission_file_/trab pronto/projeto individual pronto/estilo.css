@@ -1,0 +1,62 @@
+body, html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    min-height: 100vh;
+    background-color:whitesmoke;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 14fr 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". formulario ."
+    ". . ."
+}
+
+form{
+    margin: 10px;
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+form > input,select{
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.botoes{
+    display: flex;
+}
+
+button{
+    flex: 1;
+    border-radius: 5px;
+    font-size: 1.0em;
+    margin:2px;
+    width: 300px;
+}
+
+.resultado{
+    font-size: 1.0em;
+    background-color: darkgrey;
+    height: 35px;
+    border-radius: 5px;
+}
+div{
+    border-radius: 5px;
+    font-size: 1.3em;
+}
+.tema{
+    display:flex;
+    justify-content:space-around;
+    font-size: 0.9em;
+}
+

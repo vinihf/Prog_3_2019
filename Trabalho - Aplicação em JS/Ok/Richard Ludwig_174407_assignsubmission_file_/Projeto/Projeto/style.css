@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+html,body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16pt;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+#container{
+    width: 98,9vw;
+    height: 98,9vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: " . formulario .";
+}
+#lsel{
+    margin-right: 10px;
+}
+form{
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#view-mode>label{
+    margin-right: 20px;
+}
+.input-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "input-area1 input-area2";
+}
+h1{
+    font-size: 40pt;
+    margin: 0;
+}
+h2{
+    font-size: 20pt;
+    margin-bottom: 40px;
+}
+#text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

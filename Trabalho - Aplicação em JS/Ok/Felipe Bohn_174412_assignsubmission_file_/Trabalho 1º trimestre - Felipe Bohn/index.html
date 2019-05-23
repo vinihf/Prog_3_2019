@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora de compra no exterior</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
+</head>
+<body>  
+    <div id = "container">
+    <header><h1>Cálculo para compra de produtos importados</h1></header>
+    
+        <form class="form">
+        <div class = "valores" style="width: 850px">
+            <input type = "number" class = "valor1" name = "valor 1"  placeholder = "Informe o valor do produto, no exterior. (ex: $999)">
+            <br>
+            <br>
+            <input type = "number" class = "valor2" name = "valor 2" placeholder = "Informe quanto vale a moeda do exterior, em relação aos reais.(ex: $1 = R$4)">
+        </div>
+        <div class="divselect">
+            <label for="opcao"></label>
+        <select name="opcao" id="opcao">
+            <option value="0">Selecione um opção</option>
+            <option value="1">Com imposto</option>
+            <option value="2">Sem imposto</option> 
+        </select>
+        </div>
+        <br>
+        <br>
+           <div class = "botao">
+                <button type="button" class = "Calcular">Calcular</button>
+           </div>
+           <div class = "resultado">
+               <br>O resultado é:</br>
+           </div>
+           <div id="tema">
+                <div>
+                    <input id="dark" type = "radio" name = "escolha" value = "1"> Tema Dark
+                </div>
+                <div>
+                    <input checked id="light" type = "radio" name = "escolha" value = "0" checked> Tema Light
+                </div>
+           </div>
+        </form>
+        <br><br><br><br><br>
+        <footer>
+            <h1><br>Produzido por Felipe Bohn<br></h1>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 350px 1fr 350px;
+    grid-template-areas: 
+    ' . formulario .'
+}
+.formulario{
+    grid-area: formulario;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.formulario > input, button{
+    padding: 5px;
+}
+.imagem{
+    margin-top: 294px;
+}
+img{
+    width: 350px;
+    height: 1fr;
+}
+#resultado{
+    padding: 10px;
+}
+button{
+    background-color: lightgray;
+}

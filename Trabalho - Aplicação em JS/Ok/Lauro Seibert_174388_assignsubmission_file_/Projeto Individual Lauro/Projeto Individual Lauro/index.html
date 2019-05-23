@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projeto individual</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+
+    <div class="container">
+        <form class="content">
+            <h2>Gerador de Escala de Cores HSL</h2>
+            <p class="desc">Utilizando o sitema de cores HSL, o programa gera uma escala de cores baseada na entrada do usuário, 
+                variando de 0 até 359. O usuário pode copiar as cores no formato RGB para uso próprio. Presets de cores estão disponíveis, para aplicá-los é necessário que o campo Valor HSL esteja vazio, e o botão "Aleatório" gera uma escala aleatória para o usuário.
+            </p>
+            
+            <div style="display: inline-block; padding: 6px">
+            Valor HSL:<input type="number" name='valor1' class="valor" placeholder='Valor HSL' min="0" max="359" oninput="cortar(this)"><br>
+            Presets: <select type="select" class="slct">
+                <option value="0">Nenhum</option>
+                <option value="1">Azul</option>
+                <option value="2">Vermelho</option>
+                <option value="3">Amarelo</option>
+                <option value="4">Verde</option>
+                <option value="5">Laranja</option>
+                <option value="6">Roxo</option>
+                <option value="7">Rosa</option>
+            </select>
+            </div>
+
+            <div class="btns">
+                <button type="button" class="but">Calcular</button> 
+                <button type="button" class="al">Aleatório</button>
+            </div>
+
+            <div class="painel">
+                <div id="d1" style="background-color: hsl(200, 100%, 50%)">  <button type="button" id="b" onclick="copy(d1)">Copiar</button>  <button type="button" id="b2" onclick="cor(d1)">Aplicar</button> </div>
+                <div id="d2" style="background-color: hsl(200, 70%, 40%)">    <button type="button" id="b" onclick="copy(d2)">Copiar</button> <button type="button" id="b2" onclick="cor(d2)">Aplicar</button> </div>
+                <div id="d3" style="background-color: hsl(200, 50%, 30%)">    <button type="button" id="b" onclick="copy(d3)">Copiar</button> <button type="button" id="b2" onclick="cor(d3)">Aplicar</button> </div>
+                <div id="d4" style="background-color: hsl(200, 30%, 20%)">    <button type="button" id="b" onclick="copy(d4)">Copiar</button> <button type="button" id="b2" onclick="cor(d4)">Aplicar</button> </div>
+                <div id="d5" style="background-color: hsl(200, 10%, 15%)">    <button type="button" id="b" onclick="copy(d5)">Copiar</button> <button type="button" id="b2" onclick="cor(d5)">Aplicar</button> </div>
+            </div>
+
+
+            <div class="radio">
+            <input type="radio" name="theme" id="L" value="1" > Light
+            <input type="radio" name="theme" id="D" value="0" checked> Dark
+            </div>
+
+            <p class="credito">Desenvolvido por Lauro</p>
+        </form>
+
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>

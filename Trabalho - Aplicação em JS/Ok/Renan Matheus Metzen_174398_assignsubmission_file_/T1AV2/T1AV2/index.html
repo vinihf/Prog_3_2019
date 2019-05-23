@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hogwarts</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
+    
+</head>
+<body>
+    <div class="containeri">
+        
+        <form class="form color" id='form'>
+        <h1>Bem vindo!</h1>
+        <p>Este site é destinado para estudantes de Hogwarts que <br>
+        pretendem se informar sobre as disciplinas que estão disponíveis para cada ano.</p>
+
+        <input class="inp color" id="ano" type="number" placeholder="Digite o ano que está cursando (1 a 7)" required>
+        <select id="tipo" class="select color" required>
+            <option value="0">Selecione </option>
+            <option value="1">Feitiços</option>
+            <option value="2">Poções</option>
+            <option value="3">Transfigurações</option>
+        </select>
+
+        <button class="colorbtn" id = "btn">Continuar</button>
+
+        <div id="result" class="result color">
+            <h2 id="h2">Resultado</h2>
+        </div>
+
+        <div class="radios">
+            
+    <div>
+        <input id="dark" name="dol" onchange="changeColor()" class="radiod" type="radio" value="1"checked> 
+        <label for="radiod">Dark</label>
+    </div>
+    <div>
+        <input id="light" name="dol" onchange="changeColor()" class="radiol" type="radio" value="0" > 
+        <label for="radiol">Light</label>
+    </div>
+
+        </div>
+        <p>Desenvolvido por Renan Matheus Metzen</p>
+    </form>
+    
+
+
+</div>
+    <script src="main.js"></script>
+</body>
+</html>

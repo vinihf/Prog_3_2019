@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CIFRA DE CÉSAR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
+</head>
+<body>
+    <div id='container'>
+        <form>
+            <h1>CIFRA DE CÉSAR</h1>
+            <p>É um tipo de cifra de substituição na qual cada letra do texto é substituída por outra, que se apresenta no alfabeto abaixo dela um número fixo de vezes. O nome do método é em homenagem a Júlio César, que o usou para se comunicar com os seus generais.</p>
+            <input type='text' id='palavra' name='palavra' placeholder="Palavra para criptografar/descriptografar" >
+            <input type='password' id='passagem' name='passagem' placeholder="Senha da criptografia" >
+            <select name="select" id="tipo">
+                <option value=0 selected>Selecione...</option> 
+                <option value=1>Criptografar</option> 
+                <option value=2>Descriptografar</option>
+            </select>
+            <button name="button" class="botao">EXECUTAR</button>
+            <div class="tema">
+                <input type='radio' value ="light"name='cor' onclick='skin0()'checked> Light
+                <input type='radio' value="dark" name='cor' onclick='skin1()'> Dark  
+            </div>
+            <div id='resultado'>
+                RESULTADO 
+            </div>
+            <p>Desenvolvido por Paulo</p>
+        </form>
+
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>

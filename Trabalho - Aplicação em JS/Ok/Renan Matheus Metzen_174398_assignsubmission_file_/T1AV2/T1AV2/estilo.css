@@ -1,0 +1,83 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.containeri{
+    background-image:url(e2cdfd367a24dfdb9c7ac1ca34449583c819d39e_00\ \(1\).jpg);
+    background-repeat: round;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+h1{
+   
+    font-size: 40px;
+}
+.inp{
+    width: 300px;
+    height: 30px;
+    border-radius: 6px;
+    margin:30px;
+}
+
+.select{
+    width: 305px;
+    height: 37px;
+    border-radius: 6px;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    width:100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+}
+button{
+    margin:30px;
+    width:100px;
+    height: 30px;
+    border-radius: 6px;
+}
+.result{
+    text-align: center;
+    width: 300px;
+    height: 80px;
+    border-radius: 6px;
+    border-color: white;
+    border-style: outset;
+    color: white;
+}
+.color{
+    background-color:rgba(0, 0, 0, 0.747);
+    color: white;
+    border-color: white;
+}
+.colorbtn{
+    background-color:rgb(48, 48, 48);
+    color: white;
+    border-color: white;
+}
+.light{
+    background-color:rgb(255, 255, 255);
+    color: black;
+    border-color: black;
+}
+
+.radios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+}
+h2{
+    font-size: 18px;
+    
+}
+p{
+    font-size: 15px;
+    text-align: center;
+}
+

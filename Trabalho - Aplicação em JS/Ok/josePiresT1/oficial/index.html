@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- Codigo OFICIAL -->
+<html>
+<head>
+	<title>Reprodutor de Musica</title>
+	<link rel="stylesheet" type="text/css" href="estileira.css" >
+	<link href="https://fonts.googleapis.com/css?family=Lobster|New+Rocker|Pacifico|Rock+Salt" rel="stylesheet">
+</head>
+
+<body>
+	<div id="container" > 
+		<div id="tudo" >
+			<header>
+				<h1 id="titulo">Reprodutor de música</h1>
+			</header>
+
+
+			<section>
+				<div id="grupo_banda">
+					<label>Seleciona uma banda: </label>
+					<select id="banda" onclick="Pesquisar()" >
+						<option value="nada">Selecione</option>
+						<option value="acdc">AC/DC</option>
+						<option value="guns">Guns N'Roses</option>
+						<option value="nirvana">Nirvana</option>
+						<option value="metallica">Metallica</option>
+						
+					</select>
+				</div>
+				<div class="musica">
+					<label>Selecione a música: </label>
+					<select id="musica" onclick="loadmusic();" >
+					</select>
+						
+				</div>
+				
+				<div id="perfil"  >
+					<form>
+						<input type="radio" name="tipoPerfil" id="L" onclick="trocar()" checked >Light
+						<input type="radio" name="tipoPerfil" id="D" onclick="trocar()" >Dark
+					</form>				
+				</div>
+				<div id="tocador" style="display: flex;">
+					<audio id="audio"  controls="controls">
+						<source  src="" type="audio/mpeg"/>
+						
+					</audio>
+				</div>
+			</section>
+
+			<footer>Desenvolvido por José Pires</footer>
+		</div>
+	</div>>
+	
+
+	
+	<script src='funcao.js'>
+    </script>
+</body>
+</html>

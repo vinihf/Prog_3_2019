@@ -1,0 +1,38 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+
+#container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1.25fr 1fr;
+    grid-template-areas: ". meio .";
+    background-image: url('imagem_dark.png');
+    color: white;
+    
+}
+
+form{
+    grid-area: meio;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.nome1, .resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-evenly;
+}
+

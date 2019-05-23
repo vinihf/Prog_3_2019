@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>trabahlo individual</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="estilo.css" rel="stylesheet">
+        
+    </head>
+    <body>
+
+        <div id= "container">
+            <form >
+                <h1>Calcule seu peso ideal!!</h1><br>
+                <p>Digite seu nome e sua altura em centimetros e descubra a margem do seu peso ideal para seu corpo! :) </p><br>
+                
+                <label>nome: </label>
+                <input type="text" class = "nome" name= "nome">
+                <br><br>
+                <label>altura: </label>
+                <input type="float" class = "altura" name= "altura" placeholder="exemplo: 180">
+                <br>
+
+                <select name="sexo" class="sexo">
+                    <option value=4>masculino</option>
+                    <option value=2>feminino</option>
+                </select><br>
+
+                <button class="calc">Calcular</button>
+
+                <div class="result">Seu peso ideal é aproximadamente: </div>
+
+                <input type="radio" name="radio" value="1" class="r1" checked> light
+                <input type="radio" name="radio" value="0" class="r2" > dark
+
+                <footer>Desenvolvido por Álvaro Rodrigues </footer>
+            </form>
+            
+            
+           
+        </div>
+
+        <script src="main.js"></script>
+        
+    </body>
+    </html>

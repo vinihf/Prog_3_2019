@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Trabalho</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container" id="contain">
+            <div class="imagem">
+                <img src="bambuP.png">
+            </div>
+            <form class="formulario" id="form">
+                <h1>Calculadora de Hidratação</h1>
+                <h3>Essa calculadora pega a quantidade de água, refrigerante ou álcool que foi consumida e calcula quanta água é necessaria para manter o corpo hidratado.</h3>
+                <div>
+                    <input type="number" id="number" placeholder="quantidade bebida">
+                    <select id="quantidade">
+                        <option value="ml">mililitro(s)</option>
+                        <option value="l">Litro(s)</option>
+                    </select>
+                </div>
+                <div>
+                    O que foi bebido:
+                    <select id="conteudo">
+                        <option value="a">Água</option>
+                        <option value="r">Refrigerante</option>
+                        <option value="ba">Bebida Alcoólica</option>
+                    </select>
+                </div>
+                <button id="ação">Calcular</button>
+                <input type="text" id="resultado" placeholder="Água que falta para beber">
+                <div class="radio">
+                    <input type="radio" name="Color" id="light" value="1" checked>Light
+                    <input type="radio" name="Color" id="dark" value="2">Dark
+                </div>
+                <p>Desenvolvido por Gabriel Bauer.</p>
+            </form>
+            <div class="imagem">
+                <img  src="bambuP.png">
+            </div>
+        </div>
+    <script src="main.js"></script>
+    </body>
+</html>

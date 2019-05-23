@@ -1,0 +1,66 @@
+#container{
+    display:grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-areas: ". TheTrooper .";
+    min-height: 100% 
+    
+}
+
+body{
+    background-image: url(Light.jpg);
+    background-size: 1370px;
+}
+
+form{
+    width: 100%;
+    margin: 10px;
+    grid-area: TheTrooper;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-style: outset;
+    border-color: green;
+    border-width: 5px;
+    background-color: white;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    font-size: 2ch;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+span{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#resultado{
+    text-align: center;
+    background-color: white;
+}
+
+#resposta{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-style: outset;
+    border-color: goldenrod;
+    width: 120px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#VGA, #Processador, #overclock{
+    width: 200px;
+}
+
+#ok{
+    width: 75px;
+    height: 25px;
+}

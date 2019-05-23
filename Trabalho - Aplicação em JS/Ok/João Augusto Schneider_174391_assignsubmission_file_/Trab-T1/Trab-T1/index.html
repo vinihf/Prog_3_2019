@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Trabalho T-1</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name='description' content="Este é um guia para formulários">
+        <link href="estilo.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+        <form>
+            <div>
+                    <h1> Calculadora de Voltagem </h1>
+                    <br>
+                    <h2> Insira seu hardware, em seguida, será dado a voltagem que sua fonte deve suprir. </h2>
+                    <br>
+
+                <span> Processador: </span>
+                <label for='Processador'>Qual o processador que será utlizidado? </label> <br> 
+                <select id="Processador">
+                <option value='0'> Escolha</option>
+                <option value='1'> AMD Ryzen 3-5-7 </option>
+                <option value='2'> Amd Ryzen X </option>
+                <option value='3'> Amd Threadripper </option>
+                <option value='4'> Intel i3 9Ge </option>
+                <option value='5'> Intel i5 9Ge </option>
+                <option value='6'> Intel i7 9Ge </option>
+                <option value='7'> Intel i9 9Ge </option>
+                </select> <br>
+                
+                <br>
+
+                <span>  Placa de Vídeo: </span> 
+                <label for='VGA'> Qual a placa de video que será utlizidada? </label> <br> 
+                <select id="VGA">
+                <option value='0'> Escolha</option>
+                <option value='1'> AMD RX560 - RX570 </option>
+                <option value='2'> AMD RX580 - RX590</option>
+                <option value='3'> AMD RADEON VEGA</option>
+                <option value='4'> Nvidia GTX1050 - GTX1060 </option>
+                <option value='5'> Nvidia GTX1070 - GTX 1080ti</option>
+                <option value='6'> Nvidia RTX2060</option>
+                <option value='7'> Nvidia RTX2070</option>
+                <option value='8'> Nvidia RTX2080 - TI</option>
+                </select> <br>
+
+                <br>
+
+                <span> Overclock: </span>
+                <label for="Overclock"> Será feito overclock em algum componente? </label> <br> 
+                
+                <input id="overclock" type="text" placeholder="CPU/VGA/CPUeVGA/N"> <br> <br>
+
+                <div> <button id="ok" type="button"> OK </button> </div> <br>
+
+                <span> Voltagem mínima: </span> <br> <br>
+                <div id="resposta"> </div> <br><br>
+
+                <div> <input type="radio" name="tema" id="Light" value="0" CHECKED> Light
+                      <input type="radio" name="tema" id="Dark" value="1" > Dark 
+                </div> 
+                
+                <h4> Desenvolido por: João Augusto Schneider</h4>
+
+                </select>
+            </div>
+        </form>
+        <script src="main.js"></script>
+        </div>
+    </body>
+</html>

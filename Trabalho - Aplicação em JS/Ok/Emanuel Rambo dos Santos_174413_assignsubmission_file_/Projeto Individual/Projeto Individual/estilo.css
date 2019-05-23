@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds');
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(fundo.png);
+    background-size: cover;
+    
+}
+
+
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas:
+    ". . ."
+    ". conteudo ."
+    ". . ."
+}
+
+form{
+    background-color: #B22222;
+    grid-area: conteudo;
+    border-style: solid;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+.imagem1{
+    padding-top: 40px;
+    padding-right: 100px;
+    padding-left: 100px;
+    height: 250px;
+}
+
+.imagem1 > img{
+    height: 120px;
+    width: auto;
+}
+
+.imagem2{
+    padding-right: 110px;
+    padding-left: 110px;
+    padding-top: 40px;
+    height: 250px;
+}
+
+.imagem2 > img{
+    height: 120px;
+    width: auto;
+}
+
+h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+button{
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.resultado{
+    font-family: 'Trade Winds', cursive;
+    text-align: center;
+}

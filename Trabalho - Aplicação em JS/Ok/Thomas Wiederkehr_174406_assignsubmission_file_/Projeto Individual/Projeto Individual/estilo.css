@@ -1,0 +1,78 @@
+html,body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-image: url(light.png);
+}
+.claro{
+    background-color: white;
+}
+.escuro{
+    background-color: black;
+}
+.light{
+    background-image: url(light.png);
+}
+.dark{
+    background-image: url(dark.png);
+}
+.layout{
+    display: grid;
+    grid-template-columns: 5fr 4fr 5fr;
+    grid-template-rows: 1fr 15fr 2fr;
+    height: 100vh;
+    grid-template-areas:
+    ". . ." 
+    ". formulário ."
+    ". . ."
+}
+form{
+    background-color: white;
+    font-size: 1.1em;
+    grid-area: formulário;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    border-style: solid
+}
+input[type=number], button, select{
+    height:30px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+button{
+    width: 150px;
+}
+input[type=number], select{
+    width: 300px;
+}
+h1{
+    margin: 7px;
+    font-size: 1.5em;
+}
+p{
+    text-align: justify;
+    font-size:0.9em;
+    margin:3px 13px;
+}
+.botoes{
+    text-align: center;
+}
+.radios{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1em;
+}
+input[type="radio"]{
+    width:20px;
+}
+.result{
+    justify-content: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    height:50px;
+    font-size: 1.2em;
+}

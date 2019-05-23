@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+body,html {
+    text-align: left;  
+    background-color: rgb(243, 242, 235);
+    font-family: Verdana, Tahoma, Arial;
+    margin:0;
+    padding:0;
+    height:100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+* {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.button-color{
+    color: rgb(53, 1, 53);
+}
+footer{
+    grid-area: fot;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family:sans-serif;
+    font-size: 20px;
+    background-color: rgb(53, 1, 53);
+    color: white;
+}
+
+.fot > footer{
+
+    background-color: rgb(53, 1, 53);
+    color: white;
+    position: fixed;
+}
+
+.container {
+    min-height: 100vh;
+    margin: auto;
+}
+
+
+
+.title-text{
+    margin-top: -200px;
+    font-family: 'Acme', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    color: rgb(53, 1, 53);
+}
+.content-text{
+    margin-top: 50px;
+    margin-left: 30px;
+    font-family: 'Acme', sans-serif;
+    font-size: 22px;
+    color: rgb(53, 1, 53)
+}
+.item-img img {
+    max-width: 200px;
+    max-height: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    border: 4px solid black;
+    background-color: rgb(63, 59, 59);
+    border-radius: 10px;
+}
+
+.resultado{
+    font-family: 'Acme', sans-serif;
+    font-size: 22px;
+    margin-left: 30px;
+    color: rgb(53, 1, 53)
+}
+
+
+.img-open img {
+    max-width: 250px;
+    max-height: 200px;
+    margin-top: 30px;
+    width: auto;
+    height: auto;
+    border: 4px solid black;
+    background-color: rgb(63, 59, 59);
+    border-radius: 50px;
+    display: inline;
+    margin-left: 30px;
+}
+
+.img-moeda img{
+    max-width: 250px;
+    max-height: 500px;
+    margin-top: 30px;
+    width: auto;
+    height: auto;
+    border: 4px solid black;
+    background-color: rgb(63, 59, 59);
+    border-radius: 50px;
+    display: inline;
+    margin-left: 30px;
+}
+
+.button-color{
+    text-align: right;
+    margin-right: 20px;
+}
+
+select, button{
+    font-family:sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+}
+
+.model-btn {
+    margin-left: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+.chave{
+    margin-left: 30px;
+    border-radius: 5px;
+}
+.moeda{
+    margin-left: 155px;
+    border-radius: 5px;
+}
+.abrir{
+    margin-left: 170px;
+    padding: 3px 6px;
+    font-size: 0.8em;
+    border-radius: 5px;
+}
+
+.space{
+    margin-top: 0px;
+}
+
+.random-item img{
+    max-width: 550px;
+    max-height: 550px;
+    margin-top: 30px;
+    width: auto;
+    height: auto;
+    border: 4px solid black;
+    background-color: rgb(63, 59, 59);
+    border-radius: 50px;
+    display: inline;
+    margin-top: -750px;
+    margin-left: 1000px;
+    
+}
+
+.conteudo-site{
+    font-family: 'Acme', sans-serif;
+    font-size: 22px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.gif{
+    background-size: 300px 150px;
+    margin-left: 300px;
+}

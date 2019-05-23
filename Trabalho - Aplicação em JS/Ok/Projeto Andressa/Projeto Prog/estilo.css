@@ -1,0 +1,97 @@
+body,html{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    height:100vh;
+    width: 100vw;
+    background-image: url("download.png");
+    z-index: 1;
+}
+
+#container{
+    margin-top: -20px;
+    min-height: 100vh; 
+    display: grid;
+    grid-template-columns: 2.4fr 3fr 2.4fr;
+    grid-template-areas: ". formulario .";    
+}
+
+h4{
+    margin-left: 12px;
+}
+
+.titulo{
+    text-align: center;
+    color: black;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+form{
+    margin: 50px;
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 15px;
+    width: 700px;
+    opacity: 0.85;
+    background-color:#F5FFFA;
+}
+
+form > input{
+    border-radius: 3px;
+    font-size: 1.3em;
+    font-family: 'Titillium Web', sans-serif;
+    width: 500px;
+    margin-left: 82px;
+    background-color: #F5F5F5;
+}
+
+select{
+    flex: 1;
+    border-radius: 3px;
+    font-size: 1.3em;
+    width:500px;
+    margin-left: 82px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #F5F5F5;
+}
+
+.botao{
+    display: flex;
+    width: 500px;
+    margin-left: 82px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.botao > button{
+    flex: 1;
+    border-radius: 3px;
+    font-size: 1.3em;
+    background-color: #F5F5F5;
+}
+
+.resultado{
+    text-align: center;
+    font-size: 1.3em;
+    height: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    height: 10%;
+}
+
+.tema{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Titillium Web', sans-serif;
+    margin-left: -20px;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    background-color:#F5FFFA;
+    margin-top: -35px;
+    height: 48px;
+}
+

@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css?family=K2D');
+
+
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'K2D', sans-serif;
+
+}
+
+.corpo_light{
+    background-color: rgb(230, 230, 230);   
+    height: 100vh;
+    width: 100vw;   
+    display: grid;
+    grid-template-columns: 25% 1fr 20px 1fr 25%;
+    grid-template-rows: 15% 10% 1fr 20px 1fr 20px 1fr 20px 1fr 5%;
+    grid-template-areas: 
+    ". titulo titulo titulo ."
+    "config nometime1 . nometime2 escolhidos"
+    "escolhas mapa1 . mapa2 resultado1"
+    "escolhas . . . ."
+    "inicio mapa3 . mapa4 resultado2"
+    ". . . . ."
+    ". mapa5 . mapa6 resultado3"
+    ". . . . ."
+    "temas mapa7 mapa7 mapa7 ."
+    "creditos creditos creditos creditos creditos";
+}
+
+.corpo_dark{
+    background-color:rgb(32, 32, 32);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 25% 1fr 20px 1fr 25%;
+    grid-template-rows: 15% 10% 1fr 20px 1fr 20px 1fr 20px 1fr 5%;
+    grid-template-areas: 
+    ". titulo titulo titulo ."
+    "config nometime1 . nometime2 escolhidos"
+    "escolhas mapa1 . mapa2 resultado1"
+    "escolhas . . . ."
+    "inicio mapa3 . mapa4 resultado2"
+    ". . . . ."
+    ". mapa5 . mapa6 resultado3"
+    ". . . . ."
+    "temas mapa7 mapa7 mapa7 ."
+    "creditos creditos creditos creditos creditos";
+}
+
+
+.titulo{
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.escolhas{
+    grid-area: escolhas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.entrada_light {
+    height: 30%;
+    width: 80%;
+    margin: 6px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0.13);
+    font-family: 'K2D', sans-serif;
+    outline: none;
+}
+
+.entrada_dark {
+    height: 30%;
+    width: 80%;
+    margin: 6px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: 'K2D', sans-serif;
+    outline: none;
+}
+
+::-webkit-input-placeholder{
+    color:black;
+}
+
+
+.descricao{
+    text-align: center;
+}
+
+.mapa1{
+    display: flex;
+    grid-area: mapa1;
+    flex-direction: column;
+    background-color: rgba(184, 52, 52, 0.349);
+    border-radius: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa2{
+    display: flex;
+    grid-area: mapa2;
+    flex-direction: column;
+    background-color: rgba(184, 52, 52, 0.349);
+    border-radius: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa3{
+    display: flex;
+    grid-area: mapa3;
+    flex-direction: column;
+    background-color: rgba(139, 170, 88, 0.514);
+    border-radius: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa4{
+    display: flex;
+    grid-area: mapa4;
+    flex-direction: column;
+    background-color: rgba(139, 170, 88, 0.514);
+    border-radius: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa5{
+    display: flex;
+    grid-area: mapa5;
+    flex-direction: column;
+    background-color: rgba(184, 52, 52, 0.349);
+    border-radius: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa6{
+    display: flex;
+    grid-area: mapa6;
+    flex-direction: column;
+    background-color: rgba(184, 52, 52, 0.349);
+    border-radius: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mapa7{
+    display: flex;
+    grid-area: mapa7;
+    flex-direction: column;
+    background-color: rgba(153, 127, 22, 0.514);
+    border-radius: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nome_map{
+    text-align: center;
+    font-size: 25px;
+}
+
+.igual{
+    font-size: 15px;
+    text-align: top;
+}
+
+.nometime1 {
+    display: flex;
+    grid-area: nometime1;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nometime2 {
+    display: flex;
+    grid-area: nometime2;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nome{
+    font-size: 20px;
+    text-align: top;
+}
+
+.botao{
+    width: 200px;
+    height: 50px;
+    border-style: none;
+    align-items:center;
+    border-radius: 80px;
+    font-family: 'K2D', sans-serif;
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+.botao_dark{
+    width: 200px;
+    height: 50px;
+    border-style: none;
+    align-items:center;
+    border-radius: 80px;
+    font-family: 'K2D', sans-serif;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.txtconfig{
+    font-size: 20px;
+}
+
+.pconfig{
+    display: flex;
+    grid-area: config;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.start{
+    display: flex;
+    grid-area: inicio;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+}
+
+.iniciar{
+    background-color: rgba(139, 170, 88, 0.514);
+    height: 40%;
+    width: 35%;
+    border-style: none;
+    border-radius: 10px;
+    margin:5px;
+}
+
+.reiniciar{
+    background-color: rgba(184, 52, 52, 0.349);
+    height: 40%;
+    width: 35%;
+    border-style: none;
+    border-radius: 10px;
+    margin:5px;
+}
+
+.escolhidos{
+    grid-area: escolhidos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+p{
+    margin: 0px;
+}
+
+.creditos{
+    grid-area: creditos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.devel{
+    font-size: 14px;
+}
+
+.tema{
+    grid-area: temas;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal{
+   width: 100%;
+   height: 100%;
+   background-color: rgb(0,0,0,0.7);
+   position: absolute;
+   top:0;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   display: none;
+}
+
+.modal-content{
+    width: 40%;
+    height: 60%;
+    background-color: rgb(216, 216, 216);
+    border-radius:20px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content_dark{
+    width: 40%;
+    height: 60%;
+    background-color:rgb(32, 32, 32);
+    border-radius:20px;
+    text-align: center;
+    position: relative;
+}
+
+.mbutton{
+    border-radius: 20px;
+    width: 35%;
+    height: 20%;
+    border-style: none;
+    margin: 1%;
+    background-size: 100%;
+    background-position: 100%;
+}
+
+.close{
+    font-size: 40px;
+    position: absolute;
+    top:0;
+    right: 1%;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+    outline: none;
+    transition: 0.1s ease;
+}
+
+.botao:hover{
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+.botao_dark:hover{
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+
+.iniciar:hover{
+    background-color: rgba(0, 128, 0, 0.555);
+}
+
+.reiniciar:hover{
+    background-color: rgba(158, 0, 0, 0.568);
+}
+
+.mbutton:hover{
+    opacity: 0.4;
+}
+
+.mbutton1{
+    background-image: url(dust2.jpg);
+}
+
+
+.mbutton2{
+    background-image: url(inferno.jpg);
+}
+
+
+.mbutton3{
+    background-image: url(mirage.jpg);
+}
+
+
+.mbutton4{
+    background-image: url(nuke.jpg);
+}
+
+
+.mbutton5{
+    background-image: url(overpass.jpg);
+}
+
+
+.mbutton6{
+    background-image: url(train.jpg);
+}
+
+
+.mbutton7{
+    background-image: url(vertigo.jpg);
+}
+
+.selecione{
+    font-size: 25px;
+}
+
+.resultado1{
+    grid-area: resultado1;
+    display: flex;
+    flex-direction: column;
+    background-position: 100%;
+    background-size: 100%;
+    height: 100%;
+    width: 80%;
+    border-radius: 80px;
+}
+
+.resultado2{
+    grid-area: resultado2;
+    display: flex;
+    flex-direction: column;
+    background-position: 100%;
+    background-size: 100%;
+    height: 100%;
+    width: 80%;
+    border-radius: 80px;
+}
+
+.resultado3{
+    grid-area: resultado3;
+    display: flex;
+    flex-direction: column;
+    background-position: 100%;
+    background-size: 100%;
+    height: 100%;
+    width: 80%;
+    border-radius: 80px;
+}
+
+.molde1{
+    grid-area: resultado1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.molde2{
+    grid-area: resultado2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.molde3{
+    grid-area: resultado3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+

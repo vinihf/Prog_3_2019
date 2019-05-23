@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+          
+}
+
+body{
+    background-image: linear-gradient(to bottom, #b5d398, #a2c78d, #8fbb82, #7bb078, #67a46f);
+}
+
+.container{
+    display:grid;
+    grid-template-rows: 10% 1fr 9fr 1fr 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    width: 100vw;   
+    font-family: 'Signika Negative', sans-serif;
+    grid-template-areas: 
+    ". titulo ."
+    ". descricao ."
+    
+    ". form ."
+    ". opcao ."
+    ". rodape ."
+}
+
+.titulo{
+    grid-area: titulo;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+.explicacao{
+    grid-area: descricao;  
+    text-align: center;
+}
+
+form{
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-style: groove;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.opcoes{
+    grid-area: opcao;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.4cm;
+}
+
+footer{
+    grid-area: rodape;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;   
+}
+
+.opcoes>input{
+    height: 25px;
+    width: 30px;
+    font-size: 0.5cm;
+    border-radius: 10px;
+}
+
+.posicao{
+    font-size: 0.5cm;
+    border-radius: 5px;
+    padding: 3px 5px;
+    margin: 5px; 
+    background-color: rgba(255, 255, 255, 0.466);
+    outline: none;
+    cursor: pointer;
+}
+
+.confirma{
+    font-size: 0.5cm;
+    border-radius: 5px;
+    padding: 4px 7px;
+    margin: 5px;
+}
+
+.resultado{
+    font-size: 0.5cm;
+    text-align:center;
+    margin: 5px;
+    width: 100%;
+    height: 200px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    background-size: cover; 
+}
+
+.anos{
+    margin: 30px;
+}
+
+.imagem{
+    border-radius: 15px;
+}
+
+.posicao{
+    border-style: none;
+}
+
+button{
+    margin: 30px;
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.479);
+    outline: none;
+    cursor: pointer;
+}
+
+
+

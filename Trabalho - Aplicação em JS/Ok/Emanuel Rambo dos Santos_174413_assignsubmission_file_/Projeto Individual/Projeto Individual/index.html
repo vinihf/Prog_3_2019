@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="estilo.css" rel="stylesheet">
+    
+    </head>
+    <body >
+        <div class="container">
+            <form class="form">
+                <h1>Você consegue derrotar o Vilão?</h1>
+                <div class="texto">
+                    <p>Neste jogo você deverá escolher um vilão para derrotar e ao escolher você ganhará certa quantidade de dinheiro que você usará para comprar seus heróis.</p>
+                    <p>E então você é bom o suficiente para ser um herói?</p>
+                </div>
+                
+                <label for="viloes">Vilões:</label>
+                <div class="imagem1">
+                    <input type="radio" class="radioThanos" name="vilao"> <img src="thanos.png">
+                    <input type="radio" class="radioLoki" name="vilao"> <img src="lokis.png ">
+                    <input type="radio" class="radioUltron" name="vilao"> <img src="ultron.png">
+                    <input type="radio" class="radioCoringa" name="vilao"> <img src="coringa.png">
+                    <input type="radio" class="radioLex" name="vilao"> <img src="lex.png">
+                </div>
+                <br>
+                <div class="grana">
+                    Você possui <b><u>R$0,00</u></b> para comprar seus heróis
+                </div>
+                
+                <br>
+                <label for="herois">Heróis:</label>
+                <div class="imagem2">
+                    <input type="checkbox" id="heroi" class="checkFerro" name="heroi" value="50"> <img src="iron.png">
+                    <input type="checkbox" id="heroi" class="checkSuperman" name="heroi" value="70"> <img src="superman.png">
+                    <input type="checkbox" id="heroi" class="checkCapita" name="heroi" value="30"> <img src="capitao-america.png">
+                    <input type="checkbox" id="heroi" class="checkBatman" name="heroi" value="20"> <img src="batman.png">
+                    <input type="checkbox" id="heroi" class="checkThor" name="heroi" value="60"> <img src="thor.png">
+                </div>
+
+                <br>
+                <button class="btnLutar" name="btnLutar">LUTAR</button>
+                <br>
+                <div id="resultado" class="resultado">Resultado da Batalha... </div>
+                <br>
+                <div class="radios">
+                    <input type="radio" class="radioLight" name="radioBtn" > Light
+                    <input type="radio" class="radioDark" name="radioBtn" checked> Dark
+                </div>
+                
+                <br>
+                <label>Desenvolvido por Emanuel Santos</label>
+
+                
+            </form>
+
+            
+            
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Changa|Russo+One');
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+@import url('https://fonts.googleapis.com/css?family=Akronim');
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+
+
+#container{
+    background-color: rgb(117, 42, 42);
+    height:185vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: ". formulario .";
+}
+.imagemseletor{
+    width: 40px;
+
+}
+p{
+    font-size: 14px;
+}
+footer{
+    background-color: rgb(119, 69, 69);
+}
+.imagemseletor img{
+    width: 100%;
+}
+.filmes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.orgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.filme1{
+    width: 150px;
+    height: 200px;
+}
+.filme1 img{
+    width: 100%;
+}
+.filme2{
+    width: 150px;
+    height: 200px;
+}
+.filme2 img{
+    width: 100%;
+}
+.filme3{
+    width: 150px;
+    height: 200px;
+    
+}
+.filme3 img{
+    width: 100%;
+}
+.filme4{
+    width: 150px;
+    height: 200px;
+    
+}
+.filme4 img{
+    width: 100%;
+}
+.filme5{
+    width: 150px;
+    height: 200px;
+  
+    
+}
+.filme5 img{
+    width: 100%;
+}
+form{
+    margin: 10px;
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-style: ridge;
+    background-color: rgb(153, 125, 118);
+   
+}
+input{
+    background-color: rgb(167, 122, 111);
+    
+}
+select{
+    background-color: rgb(167, 122, 111);
+}
+h2{
+    color:rgb(41, 16, 6);
+    font-family: 'Changa', sans-serif;
+    font-size: 30px;
+}
+
+.letra{
+    font-family: 'Russo One', sans-serif;
+    font-size: 40px;
+    color: rgb(19, 7, 7);
+    text-align: center;
+    
+}
+.imagem1{
+    width: 300px;
+    margin: 0 auto;
+    padding: auto;
+}
+.imagem1 img{
+    width: 100%;
+}
+#imagem3{
+    width: 200px;
+    margin: 0 auto;
+    padding: auto;
+}
+#imagem3 img{
+    width: 100%;
+}
+
+.Pesquisar{
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    
+}
+button{
+    background-color: rgb(151, 100, 93);
+    width: 300px;
+    height: 40px;
+    align-items: center;
+    text-decoration: antiquewhite;
+    border-radius: 4px;
+    float: 1;
+    font-size: 20px;
+    font-family: 'Bangers', cursive;
+
+}
+.org{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

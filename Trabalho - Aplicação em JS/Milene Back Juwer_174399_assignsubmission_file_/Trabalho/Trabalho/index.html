@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Filme Selector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
+</head>
+<body>
+    <div id='container'>
+        <form>
+            <h1 class="letra">Movie selector</h1>
+            <div class="imagem1">
+                    <img class="imagemx" src="Cinema-PNG-Image-HD.png" alt="">
+                </div>
+           
+            <h2>Encontre uma lista de filmes ideal para você assistir hoje:</h2>
+            <div class="org">
+                <div >
+                <label for='select'>Light</label>
+                    <input type="radio" class = 'selectl'name="select" value="selectl" >
+                </div>
+                <div>
+                <label for='select'>Dark</label>
+                <input type="radio" class = 'selectd'name="select" checked></div>
+            </div>
+            
+            <label for='infocor'>Selecione uma cor para o dia de hoje:</label>
+            <select name="infocor" class="infocor">
+            <option value="0" > Selecione</option>
+            <option value="1" >Amarelo  </option>       
+            <option value="2">Verde</option>
+            <option value="3">Azul</option>
+            <option value="4">Roxo</option>
+            <option value="5">Laranja</option>
+            <option value="6">Rosa</option>
+            <option value="7">Preto</option>
+            <option value="8">Branco</option>
+            <option value="9" > Vermelho</option>
+            </select>
+            
+            <label for='infosau'>Você se alimentou de forma saudável hoje?</label>
+            <input type='text' class='infosau' name='infosau' placeholder="sim/não" >
+            <label for='infolua'>Hoje você está em qual fase da lua:</label>
+            <input type='text' class='infolua' name='infolua' placeholder="ex: lua cheia" >
+            <label for='infotem'>Digíte a temperatura que está na sua cidade °C:</label>
+            <input type="number" class='infotem' name='infotem' placeholder="ex:37" >
+            <label for='infoagua'>Digíte aproximadamente quantos ml d água você bebeu hoje:</label>
+            <input type="number" class='infoagua' name='infoagua' placeholder="ex: 200" >
+      
+        
+
+                <div class="Pesquisar"><button class="pesquisar">Pesquisar</button></div>
+                <div id="imagem3">
+                        <img class="imagemr"src="CoolClips_vc005318.png" alt="">
+                    </div>
+                    
+                <div class="filmes">
+                    <div class="filme1"><a class="link1" href="">
+                        <img class="filme11" src="" alt=""></a>
+                    </div>
+                    <div class="filme2"><a class="link2" href="">
+                        <img class="filme22" src="" alt=""></a>
+                    </div>
+                    <div class="filme3"><a class="link3" href="">
+                        <img class="filme33" src="" alt=""></a>
+                    </div>
+                    <div class="filme4"><a class="link4" href="">
+                        <img class="filme44"src="" alt=""></a>
+                    </div>
+                    <div class="filme5"><a class="link5" href="">
+                        <img class="filme55" src="" alt=""></a>
+                    </div>
+                  
+                </div>
+                <h1></h1>
+
+                <div class="orgs">
+                    <div><h2>Clique na imagem para assistir online</h2></div>
+                <div class="imagemseletor"><img src="Cursor-Select-icon.png" alt=""></div>
+            </div>
+                </div>
+            <footer>
+                <h3>O filme é selecionado com base no seu humor, para isso, analizamos coisas que podem ter influenciado o seu humor hoje</h3>
+                <p>referencial de pesquisa: ⇢ https://www.altoastral.com.br/a-influencia-das-cores-no-seu-humor/
+                        ⇢ https://www.terra.com.br/noticias/dino/a-lua-e-o-humor-descubra-como-funciona-essa-relacao-mistica-e-o-que-representa-cada-fase,9ddc86f68ecb866ff59ad87a77d4ea7e8yaz7x8r.html
+                        ⇢ https://revistagalileu.globo.com/Ciencia/noticia/2017/09/o-clima-realmente-altera-o-humor-das-pessoas-mostra-pesquisa.html
+                        ⇢ https://lifestyle.sapo.pt/saude/saude-e-medicina/artigos/bom-humor-com-a-alimentacao
+                        ⇢ https://gazetanews.com/sabia-que-quantidade-de-agua-ingerida-pode-influenciar-humor/
+                        <p>Autor: Milene Back Juwer</p>
+                </p>
+            </footer>
+
+        </form>
+    </div>
+    <script src='mein.js'>
+    </script>
+</body>
+</html>

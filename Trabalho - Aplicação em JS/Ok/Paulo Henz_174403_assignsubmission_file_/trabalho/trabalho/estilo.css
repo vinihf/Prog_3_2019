@@ -1,0 +1,56 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(ligth.png);
+}
+#container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 14fr 1fr;
+    height: 100vh;
+    grid-template-areas:
+    ". . ." 
+    ". f ."
+    ". . ."
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+}
+form{
+    font-size: 1.1em;
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    border-style: solid
+}
+#resultado{
+    text-align: center;
+    font-size: 1.3em;
+    border-style: solid;
+    height: 30px;
+    width: 50vw;
+}
+.tema{
+    text-align: center
+}
+input[type=password],[type=text], button, select{
+    height:30px;
+    border-radius: 1px;
+}
+input[type=password],[type=text], select{
+    width: 300px;
+}
+.light{
+    background-image: url(ligth.png);
+}
+.dark{
+    background-image: url(dark.png);
+}

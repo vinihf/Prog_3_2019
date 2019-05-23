@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My apk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+</head>
+<body>
+    <div id="container">
+        <form>
+            <div class="inicio">
+                <h1>Labirinto</h1>
+                <h2>Você se perdeu em um labirinto, agora você terá de sair com apenas 5 movimentos.</h2>
+            </div>
+            <div class="nome1">
+                <input type="text" class="nome" name='nome' placeholder="Informe o nome do azarado">
+            </div>
+            <div id="vida1">
+                <label for="vida">Vidas:</label>
+                <select name="vida" class="vida">
+                    <option value="1">1 vida</option>
+                    <option value="2">2 vidas</option>
+                    <option value="3">3 vidas</option>
+                    <option value="4">4 vidas</option>
+                    <option value="5">5 vidas</option>
+                    <option value="6">6 vida</option>
+                    <option value="7">7 vidas</option>
+                    <option value="8">8 vidas</option>
+                    <option value="9">9 vidas</option>
+                    <option value="10">10 vidas</option>
+                </select>
+            </div>
+            <div class="m1">
+                    <label>Direção:</label>
+                    <select name="movimento_1" class="movimento_1">
+                        <option value="0">Virar para a direita</option>
+                        <option value="1">Seguir em frente</option>
+                        <option value="2">Virar para a esquerda</option>
+                    </select>
+            </div>
+            <div class="m2">
+                    <label>Direção:</label>
+                    <select name="movimento_2" class="movimento_2">
+                        <option value="0">Virar para a direita</option>
+                        <option value="1">Seguir em frente</option>
+                        <option value="2">Virar para a esquerda</option>
+                    </select>
+            </div>
+            <div class="m3">
+                    <label>Direção:</label>
+                    <select name="movimento_3" class="movimento_3">
+                        <option value="0">Virar para a direita</option>
+                        <option value="1">Seguir em frente</option>
+                        <option value="2">Virar para a esquerda</option>
+                    </select>
+            </div>
+            <div class="m4">
+                    <label>Direção:</label>
+                    <select name="movimento_4" class="movimento_4">
+                        <option value="0">Virar para a direita</option>
+                        <option value="1">Seguir em frente</option>
+                        <option value="2">Virar para a esquerda</option>
+                    </select>
+            </div>
+            <div class="m5">    
+                    <label>Direção:</label>
+                    <select name="movimento_5" class="movimento_5">
+                        <option value="0">Virar para a direita</option>
+                        <option value="1">Seguir em frente</option>
+                        <option value="2">Virar para a esquerda</option>
+                    </select>
+            </div>
+            <div class="botoes">
+                <button class="movimento">Confirmar movimentos</button>
+                <button class="reboot">Reiniciar</button>
+            </div>
+            <div class="resultado">O resultado é:</div>
+            <div class="tema">
+                <input type="radio" class="claro" name="iluminacao"> Ligth
+                <input checked type="radio" class="escuro" name="iluminacao"> Dark
+            </div>
+            <div class="fim">
+                <p>Developed by Henrique Britz Hahn</p>
+            </div>
+        </form>      
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

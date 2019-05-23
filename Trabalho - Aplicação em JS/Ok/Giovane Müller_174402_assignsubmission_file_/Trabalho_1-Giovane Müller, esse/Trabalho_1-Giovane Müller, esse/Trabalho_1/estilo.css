@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers');
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bangers', cursive;
+}
+header{
+    text-align: center;
+    background-image: url(fundo-em-quadrinhos-de-meio-tom-azul_23-2147920996.jpg);
+    font-family: 'Bangers', cursive;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    background-image: url(fundo-em-quadrinhos-de-meio-tom-azul_23-2147920996.jpg);
+}
+footer{
+    text-align: center;
+    background-image: url(fundo-em-quadrinhos-de-meio-tom-azul_23-2147920996.jpg);
+    font-family: 'Bangers', cursive;
+}
+
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    '. form .'
+}
+
+form{
+    margin: 10px;
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+divr{
+    margin: 10px;
+    grid-area: form;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.botoes{
+    display: flex;
+}
+.botoes > button{
+    border-radius: 5px;
+    font-size: 1.3em;
+    margin: 5px;
+    font-family: 'Bangers', cursive;
+}
+
+form > input{
+    border-radius: 5px;
+    font-size: 1.3em;
+}
+.resultado{
+    text-align: center;
+    font-size: 1.3em;
+    background-image: url(fundo-em-quadrinhos-de-meio-tom-azul_23-2147920996.jpg);
+}
+
+
+    

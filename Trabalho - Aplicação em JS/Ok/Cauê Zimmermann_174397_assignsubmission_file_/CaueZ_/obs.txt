@@ -1,0 +1,6 @@
+ao clicar na imagem no canto superior esquerdo
+
+- redicionará a outra página
+- a pagina terá alguns gifs de inspiração
+ para criação do site
+- e uma breve explicação do site

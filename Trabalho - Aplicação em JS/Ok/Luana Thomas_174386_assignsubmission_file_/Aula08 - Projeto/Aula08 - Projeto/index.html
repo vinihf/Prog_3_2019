@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Quantos dias faltam para o fim das aulas?</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="estilo.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <form class="form">
+            <div class="titulo">
+                <h1> Quantos dias faltam para o fim das aulas? </h1>
+            </div>
+
+            <div class="descricao">
+                <p> Informe o mês, o dia letivo, o seu nome, e o programa calculará quantos dias letivos faltam até as férias! </p>
+            </div>
+
+            <div class="select">
+                <select name="mes" id="mes" required>
+                    <option value='0' aria-placeholder="selecione" >Qual é o mês?</option>
+                    <option value='1'>Janeiro</option>
+                    <option value='2'>Fevereiro</option>
+                    <option value='3'>Março</option>
+                    <option value='4'>Abril</option>
+                    <option value='5'>Maio</option>
+                    <option value='6'>Junho</option>
+                    <option value='7'>Julho</option>
+                    <option value='8'>Agosto</option>
+                    <option value='9'>Setembro</option>
+                    <option value='10'>Outubro</option>
+                    <option value='11'>Novembro</option>
+                    <option value='12'>Dezembro</option>
+                </select>
+            </div>
+
+            <div class="input1">
+                <input id='dia' type='number' min="1" max="31" name='dia' placeholder="Qual o dia de hoje?" required>
+            </div>
+
+            <div class="input2">
+                <input id="nome" type="text" name="nome" placeholder="Qual é seu nome?" required>
+            </div>
+
+            <div class="botao">
+                <button class="calcular"> Descubra já! </button>
+            </div>
+
+            <div class="resultado"></div>
+
+            <div class="radio">
+                <div class="dark">
+                    <input id="dark" type="radio" name="tema" value="0"> Dark
+                </div>
+                <div class="light">
+                    <input id="light" type="radio" name="tema" value="1" checked> Light
+                </div>
+            </div>
+
+            <div class="rodape">
+                <h3>Desenvolvido por Luana Thomas</h3>
+            </div>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+html, .bg{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    min-width: 30%;
+    height: 100%;
+}
+form{
+    font-family: Raleway, Arial, sans-serif;
+    width: 50vw;
+    height: 95vh; 
+    display: flex;
+    margin: 0 auto;
+    background-color:transparent;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+   
+    
+}
+
+.resultado,.resultado1,.resultado2,.resultado3{
+    width: 25%;
+    height: 40%;
+    min-height: 20px;
+    background-color: transparent;
+    border-width: 1px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.resultado3{
+    background-color: transparent;
+
+
+}
+.seletor{
+    font-family: Raleway, Arial, sans-serif;
+    display: inline-block;
+    text-align: center; 
+    margin-top: 20px;
+    width: 60%;
+    left: 5%;
+    justify-content: space-evenly;
+}
+
+button{
+    width: 20%;
+    border-radius: 5px 3px ;
+    background-color: white;
+    height: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+.escolha{
+    margin-top: 20px;
+    
+}
+
+.choose{
+    border-radius: 30px 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    width: 30%;
+    height: 30px;
+
+}
+.descricao{
+    text-align: center;
+
+}
+
+select{
+
+    cursor: pointer;
+    outline: none;
+
+}
+.preco1, .preco2, .preco3, .preco4{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;    
+}
+
+.cttr{
+    display: flex;
+    position: relative;
+
+
+}
+
+.avisos{
+    border-style:  solid;
+    border-width: 1px;
+    position: relative;
+    float: left;
+}
+h3{
+    text-align: center;
+}

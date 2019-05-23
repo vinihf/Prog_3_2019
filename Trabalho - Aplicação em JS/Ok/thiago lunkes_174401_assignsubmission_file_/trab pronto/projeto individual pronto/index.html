@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Hogwarts</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="estilo.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class='container'>
+            <form>
+                <div class="imagem">
+                    <img src="chapeu.png">
+                </div>
+                <div class="intro">
+                    Descubra qual a sua casa em Hogwarts digitando seu nome e selecionando seu principal valor.
+                </div>
+                <input name='name' class='valor1' type='text' placeholder="Qual seu nome?">
+                <select name='valores' class="valor" id='valores'>
+                    <option value='1'>Coragem</option>
+                    <option value='2'>Determinação</option>
+                    <option value='3'>Ambicioso</option>
+                    <option value='4'>Calculista</option>
+                    <option value='5'>Intelectualidade</option>
+                    <option value='6'>Foco</option>
+                    <option value='7'>Gentil</option>
+                    <option value='8'>Paciente</option>
+
+                </select>
+                <div id='botao'>
+                    <button class='bt'>Descobrir</button>
+                </div>
+                <div >
+                      <h2 class='resultado' id="h2"></h2>
+                </div>
+                <div class="tema">
+                <div>
+                    <input type="radio" name="tema" value="light" id="light">Light
+                </div>
+                <div>
+                    <input type="radio" name="tema" value="dark" id="dark" >Dark
+                </div>
+                </div>
+                <div class="rodape">
+                    Desenvolvido por Thiago H. Lunkes
+                </div>
+               
+            </form>
+            
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

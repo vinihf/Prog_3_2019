@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculadora Ecológica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
+</head>
+<body>
+    <div id="container">
+        <video autoplay="true" loop muted>
+            <source src="video.mp4" tipe="video/mp4">
+        </video>
+        <form>
+            <fieldset>
+            <div class="texto">
+                <h1>Calculadora Ecológica</h1>
+                <p>     O descarte adequado e a reciclagem do lixo são fundamentais para que os resíduos não causem danos às espécies. 
+                    Portanto, é essencial termos consciência ecológica e repensarmos nossos hábitos de consumo. 
+                    Aqui você descobrirá em que ano o lixo que você está criando hoje, finalmente irá se decompor se não for devidamente reciclado.</p>
+            </div>
+            <select name="opçoes" id="opcoes">
+                    <option value="">Selecione um produto</option>
+                    <option value="1">Garrafa Pet</option>
+                    <option value="2">Sacola plástica</option>
+                    <option value="3">Plástico</option>
+                    <option value="4">Papel</option>
+                    <option value="5">Chiclete</option>
+                    <option value="6">Madeira pintada</option>
+                    <option value="7">Metal</option>
+                    <option value="8">Couro</option>
+                    <option value="9">Alumínio</option>
+                    <option value="10">Vidro</option>
+                    <option value="11">Fralda descartável</option>
+                </select>
+            <input type="text"  name="valor1" class="ano" placeholder="Informe o ano que o produto foi descartado">
+            <button class="soma">Calcular</button>
+            <div class="resultado">Resultado</div>
+            <div class="radio"></div>
+                <input id='dark' type='radio' name='cor' value='dark'><label for="dark" class="labeld">Dark</label>
+                <input id='light' type='radio' name='cor' value='light'><label for="light" class="labell">Light</label>
+            </div>
+        </fieldset> 
+        <footer>DESENVOLVIDO POR SORAIA SPOHR</footer>
+        </form> 
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

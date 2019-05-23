@@ -1,0 +1,208 @@
+/* @font-face {
+    font-family: 'Segoe UI Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Regular'), url('Segoe UI.woff') format('woff');
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(226, 224, 235);
+    color: black;
+    text-decoration-color: black;
+    background-image: url(praia.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+    
+
+}
+
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: ". . ." ". formulário ." ". . ."; 
+
+}
+
+form {
+    grid-area: formulário;
+    display: grid;
+    justify-content: space-around;
+    font-size: 1.1em;
+    opacity: 0.9;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: white;
+    height: 500px;
+    width: 4fr;
+    border-radius: 18px;
+    border-color: white;
+    grid-template-rows: 1fr 1fr 2fr 2fr 2fr 1fr 1fr 2fr 1fr 1fr;
+    grid-template-areas: "titulo" "descricao" "select" "input1" "input2" "button" "." "resultado" "tema" "footer";
+}
+
+.titulo {
+    grid-area: titulo;
+    text-align: center;
+    height: 50px;
+}
+
+.descricao {
+    grid-area: descricao;
+    text-align: center;
+    padding: 20px;
+    height: 50px;
+}
+
+.select {
+    grid-area: select;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.input1 {
+    grid-area: input1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.input2 {
+    grid-area: input2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.botao {
+    grid-area: button;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    width: 95%;
+}
+
+.resultado {
+    grid-area: resultado;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: bold;
+    font-weight: normal;
+    font-size: 17pt;
+}
+
+.radio {
+    grid-area: tema;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.dark {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.light {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.rodape {
+    text-align: center;
+    grid-area: footer;
+    justify-content: space-around;
+}
+
+input {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11pt;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 3px;
+    height: 15px;
+    border-style: solid;
+    border-color: black;
+    background-color: #fafafa;
+    border-width: 1px;
+    margin: 50 0;
+    padding: 10px;
+}
+
+select {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11pt;
+    width: 92.5%;
+    margin: 0 auto;
+    border-radius: 3px;
+    height: 40px;
+    border-style: solid;
+    border-color: black;
+    background-color: #fafafa;
+    border-width: 1px;
+    margin: 50 0;
+    padding: 10px;
+}
+
+button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12pt;
+    width: 45%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+    background-color: #fafafa;
+    border-width: 1px;
+    padding: 4px;
+}
+
+radio {
+    border-color: transparent;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11pt;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 3px;
+    height: 20px;
+    border-style: solid;
+    background-color: #fafafa;
+    border-width: 1px;
+    margin: 50 0;
+    padding: 10px;
+}
+
+h1,h3,p {  
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}

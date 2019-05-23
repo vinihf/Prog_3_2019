@@ -1,0 +1,196 @@
+@font-face{
+    font-family: "CodFont";
+    src: url("Call\ of\ Ops\ Duty.otf");
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    background-image:url("Black.jpg");
+}
+
+
+
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 2.1fr 10fr 2.1fr;
+    grid-template-rows: 1.9fr 1fr 1fr 5fr 0.5fr 1fr;
+    grid-template-areas:
+    ".  titulo ."
+    ". desc ."
+    ". . ."
+    "form sorteio ."
+    ". tema ."
+    ". criador .";
+}
+
+.titulo{
+    height: 15vh;
+    width: auto;
+}
+
+.desc{
+    grid-area:desc;
+    font-family: "CodFont";
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+header{
+    grid-area: titulo;
+    text-align: center;
+    font-family: 'Call of Ops Duty';
+    font-size: 20px;
+    color: #757575;
+}
+
+.sorteio{
+    grid-area: sorteio;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10fr;
+    grid-template-areas:
+    "j1name j2name j3name j4name j5name"
+    "j1 j2 j3 j4 j5"
+}
+
+.j1name, .j2name, .j3name, .j4name, .j5name{
+    font-family: "CodFont";
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    
+}
+
+.j1name{
+    grid-area: j1name;
+}
+.j2name{
+    grid-area: j2name;
+}
+.j3name{
+    grid-area: j3name;
+}
+.j4name{
+    grid-area: j4name;
+}
+.j5name{
+    grid-area: j5name;
+}
+
+.j1{
+    grid-area: j1;
+}
+.j2{
+    grid-area: j2;
+}
+.j3{
+    grid-area: j3;
+}
+.j4{
+    grid-area: j4;
+}
+.j5{
+    grid-area: j5;
+}
+.j1, .j2, .j3, .j4, .j5{
+    border-width: 2px;
+    border-style: solid;
+    border-color: #b1b1b1;
+    border-radius: 5px;
+    height: auto;
+    width: 98%;
+    margin: 0;
+}
+
+.btntema{
+    border-color: white;
+    width: 6vw;
+    background-color: #fa4f00;
+    color: white;
+}
+
+.formradio{
+    grid-area: tema;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.cores{
+    grid-area: menu;
+    display: float;
+    flex-direction: column;
+    text-align: right;
+}
+
+img{
+    margin: 1%;
+    height: 2%;
+    width: 2%;
+}
+
+
+.input_area{
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+input{
+    width: 60%;
+    padding: 5%;;
+    margin: 3%;
+    border-radius: 1px;
+}
+
+::placeholder{
+   color: #b1b1b1;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+select, input, button{
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.61);
+    border-style: solid;
+    border-color: #b1b1b1;
+    color: #b1b1b1;
+    border-width: 2px;
+
+}
+
+select{
+    width: 72%;
+    padding: 5%;
+    margin: 3%;
+    border-radius: 3px;
+}
+
+
+button{
+    width: 50%;
+    padding:10px;
+    margin: 15px;
+    border-radius: 3px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.criador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 100%;
+    text-align: center;
+    grid-area: criador;
+    font-family: 'CodFont';
+    color: #ffffff;
+}
+

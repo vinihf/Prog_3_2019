@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Título</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
+</head>
+<body>
+    <div class="layout">
+        <form class = "form">
+            <div>
+                <h1>Propriedades Trigonométricas dos Ângulos</h1>
+                <p>Trigonometria é um ramo da matemática que estuda as relações entre os lados e os ângulos de um triângulo. Os ângulos dos triângulos retangulos possuem diversas funções e propriedades relacionadas a eles. </p>
+                <p>Digite o ângulo, selecione a característica que deseja saber e clique em "Continuar".</p>
+            </div>
+            <input type="number" class="angulo" name="angulo" placeholder="Informe o ângulo em graus" required>
+            <select class ="opcoes" name="opcoes" id = "opcoes">
+                <option value="sen">Seno</option>
+                <option value="cos">Cosseno</option>
+                <option value="tan">Tangente</option>
+                <option value="quad">Quadrante</option>
+            </select>
+            <div class="botoes">
+                <button class="botao">Continuar</button>
+            </div>
+            <div class="result">
+                <div class="resultado"></div>
+            </div>
+            <div class= "radios">
+                <div> <input type="radio" name="fundo" onclick="lightf()" checked value="light">Light </div> 
+                <div></div>
+                <div> <input type="radio" name="fundo" onclick="lightd()" value="dark">Dark </div>
+            </div>
+            Desenvolvido por Thomas S. Wiederkehr
+        </form>
+    </div>
+    <script src="main.js">
+    </script>
+</body>
+</html> 

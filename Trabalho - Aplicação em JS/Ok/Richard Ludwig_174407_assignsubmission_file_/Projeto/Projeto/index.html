@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-b">
+    <head>
+        <title>Astro Search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink to fit=no">
+        <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    </head>
+    <body id="bd">
+        <br>
+        <br><br>
+        <div id="container">
+            <form>
+                <h1><b>Astro Search</b></h1>
+                <h2>Buscador de assuntos relacionados a Astronomia</h2>
+                <div class="input-area">
+                    <div class="input-area1">
+                        <input type="radio" name="tema" id="afis" onclick="afisclick()"value="Astrofísica"><label for="afis"><b>Astrofísica</b></label><br>
+                    </div>
+                    <div class="inpput-area2">
+                        <input type="radio" name="tema" id="plan" onclick="planclick()" value="Planetologia"><label for="plan"><b>Planetologia</b></label><br>
+                    </div>
+                </div>
+                <br>
+                <div class="select-area">
+                    <label id="lsel" for="sel"><b>Escolha uma opção:</b></label><select id="sel">
+                    </select>
+                </div>
+                <br>
+                <button id="search">Procurar</button>
+                <div id="view-mode">
+                    <h4>Modo de Vizualização:</h4>
+                    <input type="radio" name="rad" onclick="l()" id="light" checked><label for="light"><b>Light</b></label>
+                    <input type="radio" name="rad" onclick="d()" id="dark"><label for="dark"><b>Dark</b></label>
+                </div>
+                <br>
+                <br>
+                <div id="text"></div>
+                <br>
+            </form>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
