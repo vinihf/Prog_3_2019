@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' href='style.css'>
+    <title>Pedra-Papel-Tesoura</title>
+</head>
+<body>
+    <div id='container'>
+        <h1>Pedra-Papel-Tesoura</h1>
+        <h3>Jogador 1</h3>
+        <form class='jog'>
+            <div class='opcao'>
+                <input type='radio' name='jogada1' class='jogada1' value=1>
+                <img src='pedra.png'>
+            </div>
+            <div class='opcao'>
+                <input type='radio' name='jogada1' class='jogada1' value=2>
+                <img src='papel.png'>
+            </div>
+            <div class='opcao'>
+                <input type='radio' name='jogada1' class='jogada1' value=3>
+                <img src='tesoura.png'>
+            </div>
+        </form>
+        <h3>Jogador 2</h3>
+        <form class='jog'>
+            <div class='opcao'>
+                <input type='radio' name='jogada2' class='jogada2' value=1>
+                <img src='pedra.png'>
+            </div>
+            <div class='opcao'>
+                <input type='radio' name='jogada2' class='jogada2' value=2>
+                <img src='papel.png'>
+            </div>
+            <div class='opcao'>
+                <input type='radio' name='jogada2' class='jogada2' value=3>
+                <img src='tesoura.png'>
+            </div>
+        </form>
+        <button name='verificar'>Verificar</button>
+        <h2 id='resultado'>VENCEDOR: X</h2>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>

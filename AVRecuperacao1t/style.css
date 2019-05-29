@@ -1,0 +1,26 @@
+body{
+    padding: 0;
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+#container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.jog{
+    display: flex;
+    justify-content: space-around;
+}
+
+.opcao{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
