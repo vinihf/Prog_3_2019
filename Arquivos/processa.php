@@ -1,17 +1,21 @@
 <?php
-echo "Nome do arquivo:".$_FILES['imagem']['name']."<br>";
-echo "Erro:".$_FILES['imagem']['error']."<br>";
-echo "Tipo do arquivo:".$_FILES['imagem']['type']."<br>";
-echo "Nome temporário do arquivo:".$_FILES['imagem']['tmp_name']."<br>";
-echo "Tamanho do arquivo em bytes:".$_FILES['imagem']['size']."<br>";
-
-if(!file_exists($_POST['nome'])){
+//print_r($_FILES['imagem']);
+if (!file_exists($_POST['nome'])){
     mkdir($_POST['nome']);
 }
 
-if(move_uploaded_file($_FILES['imagem']['tmp_name'],$_POST['nome']."/".$_FILES['imagem']['name'])){
+$partes = explode(".",$_FILES['imagem']['name']);
+$ext = end($partes);
+
+$caminho = $_POST['nome']."/"."arquivo_do_".$_POST['nome'].".".$ext;
+//echo $caminho;
+
+if(move_uploaded_file($_FILES['imagem']['tmp_name'],$caminho)){
     echo "SUCESSO";
 }else{
     echo "FALHOU";
 }
+
+
+
 
