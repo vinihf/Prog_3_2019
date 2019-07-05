@@ -1,5 +1,5 @@
 <?php
-include_once __basedir__."/db/Configuracao.inc.php";
+include_once getcwd()."\db\Configuracao.inc.php";
 
 class MySQL{
 	
