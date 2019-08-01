@@ -10,8 +10,11 @@
     <h1>Sistema de Cadastro de Avaliações</h1>
     <ul>
         <li><a href='formCadAvaliacao.html'>Inserir nova avaliação</a></li>
-        <li><a href='lstAvaliacoes.php'>Listas todas avaliações</a></li>
+        <li><a href='lstAvaliacoes.php?disciplina=Todas'>Listas todas avaliações</a></li>
         <li><a href='pesquisaAvaliacao.php'>Pesquisar avaliações</a></li>
     </ul>
 </body>
 </html>
+
+
+

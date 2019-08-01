@@ -15,10 +15,9 @@ class Avaliacao{
         $this->disciplina = $disciplina;
         $this->conteudo = $conteudo;
         $this->tipo = $tipo;
-        $this->peso = $peso;
-
-        
+        $this->peso = $peso;    
     }
+    
     public function __set($atributo,$valor){
         $this->$atributo = $valor;
     }
@@ -33,7 +32,6 @@ class Avaliacao{
                 into avaliacoes (data, disciplina, conteudo, tipo, peso) 
                 values
                 ('".$this->data."',".$this->disciplina.",'".$this->conteudo."',".$this->tipo.",".$this->peso.")";
-        echo $sql;
         $conexao->executa($sql);
     }
 
@@ -57,5 +55,33 @@ class Avaliacao{
         }else{
             return false;
         }
+    }
+
+    public static function listaPorDisciplina($idDisciplina){
+        $conexao = new MySQL();
+		$sql = "SELECT * FROM avaliacoes WHERE disciplina  = ".$idDisciplina;
+		$resultados = $conexao->consulta($sql);
+		if(!empty($resultados)){
+            $avaliacoes = array();
+            foreach($resultados as $resultado){
+                $avaliacao = new Avaliacao();
+                $avaliacao->id = $resultado['id'];
+                $avaliacao->data = $resultado['data'];
+                $avaliacao->disciplina = $resultado['disciplina'];
+                $avaliacao->conteudo = $resultado['conteudo'];
+                $avaliacao->tipo = $resultado['tipo'];
+                $avaliacao->peso = $resultado['peso'];
+                $avaliacoes[] = $avaliacao;
+            }
+            return $avaliacoes;
+        }else{
+            return false;
+        }
+    }
+
+    public static function excluir($id){
+        $conexao = new MySQL();
+        $sql = "DELETE FROM avaliacoes where id =".$id;
+        $conexao->executa($sql);
     }
 }
