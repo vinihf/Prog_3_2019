@@ -57,6 +57,19 @@ class Avaliacao{
         }
     }
 
+    public function listaUm(){
+        $conexao = new MySQL();
+		$sql = "SELECT * FROM avaliacoes where id =".$this->id ;
+		$resultados = $conexao->consulta($sql);
+		if(!empty($resultados)){
+            $this->data = $resultados[0]['data'];
+            $this->disciplina = $resultados[0]['disciplina'];
+            $this->conteudo = $resultados[0]['conteudo'];
+            $this->tipo = $resultados[0]['tipo'];
+            $this->peso = $resultados[0]['peso'];
+        }
+    }
+
     public static function listaPorDisciplina($idDisciplina){
         $conexao = new MySQL();
 		$sql = "SELECT * FROM avaliacoes WHERE disciplina  = ".$idDisciplina;
@@ -82,6 +95,13 @@ class Avaliacao{
     public static function excluir($id){
         $conexao = new MySQL();
         $sql = "DELETE FROM avaliacoes where id =".$id;
+        $conexao->executa($sql);
+    }
+
+    public function editar(){
+        $conexao = new MySQL();
+        $sql = "UPDATE avaliacoes SET data = '".$this->data."',disciplina ='".$this->disciplina."',conteudo='".$this->conteudo."',tipo = '".$this->tipo."',peso = '".$this->peso."'  
+        where id =".$this->id;
         $conexao->executa($sql);
     }
 }

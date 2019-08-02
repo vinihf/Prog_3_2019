@@ -14,7 +14,8 @@ $disciplinas[3] = "Análise";
 $tipos[1] = "Trabalho";
 $tipos[2] = "Prova";
 
-echo "<table>";
+if ($avaliacoes!=false){
+    echo "<table>";
 echo "<tr>";
 echo "<td>Disciplina</td>";
 echo "<td>Data</td>";
@@ -30,10 +31,15 @@ foreach($avaliacoes as $av){
     echo "<td>".$av->conteudo."</td>";
     echo "<td>".$tipos[$av->tipo]."</td>";
     echo "<td>".$av->peso."</td>";
+    echo "<td> <a href='formEditAvaliacao.php?id=".$av->id."'>Editar </a></td>";
     echo "<td> <a href='processa.php?acao=excluir&id=".$av->id."'>Excluir </a></td>";
     echo "</tr>";
 }
 echo "</table>";
+}else{
+    echo "Não há nenhum registro";
+}
+
 
 
 
