@@ -1,0 +1,11 @@
+{
+    "name": "php/padrao",
+    "description": "Projeto respeitando psr",
+    "minimum-stability": "dev",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+          "Classes\\": "src/"
+        }
+    }
+}

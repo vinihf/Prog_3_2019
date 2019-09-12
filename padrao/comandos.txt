@@ -1,0 +1,11 @@
+Criar pasta src
+
+dentro da pasta usar composer init
+
+"autoload": {
+    "psr-4": {
+      "HeroProject\\": "src/"
+    }
+}
+
+composer dump-autoload

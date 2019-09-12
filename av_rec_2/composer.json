@@ -1,0 +1,20 @@
+{
+    "name": "vinihf/todo",
+    "description": "Recuperacao",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vinicius Ferreira",
+            "email": "vinihf@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+          "Classes\\": "src/",
+          "Classes\\BD\\": "src/"                
+        }
+      }
+}
